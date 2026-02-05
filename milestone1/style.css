@@ -1,0 +1,45 @@
+
+            a {
+                color:purple
+            }
+            header {background-color:red;
+                color:white
+            }
+            h1 {font-size: 50px}
+            p{
+        font-size: 1.5rem;
+    }
+    #bluetext { color:blue}
+
+    .redtext {color:blue}
+body{
+    background-image: linear-gradient(#dddddd #FFFFFF);
+}
+
+    p{
+        font-size: 2rem;
+        font-weight: bold;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 26;
+        line-height: 1;
+        text-transform: uppercase
+            }
+    nav{
+        border:2px solid red  ;
+        border-radius: 20px;
+
+    }
+    nav ul li{
+        display:inline-block;
+
+        padding: 10px 20px;
+        margin:0px;
+        background-color: grey;
+    }
+    .myimage{
+        size: 300px;
+    }
+
+
+    
