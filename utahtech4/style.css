@@ -1,34 +1,24 @@
-
+* { box-sizing: border-box; }
 body {
     font-family: Verdana, sans-serif;
     background-color: #FFFFFF; 
     color: #666666;
     background-image: linear-gradient(to bottom, #eeeeee, #ffffff);
     background-attachment: fixed;
+    margin:0;
 
     
         
         
 }
 #wrapper {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    background-color:  #ffffff;
-    min-width: 960px;
-    max-width: 2048px;
-    box-shadow: 0px 3px 3px rgba(66,66,66,0.3);
-
-
-
+    display:grid;
+    grid-auto-rows: minmax(0,auto);
+    grid-template-columns: minmax(0px,1fr) repeat(6,minmax(0,175)) minmax(0px,1fr);
 }
-header {
-    background-color: #003058;
-    color: #FFFFFF;
-    font-family: Georgia, 'Times New Roman', Times, serif;
- 
-}
-h1 {
+
+
+header h1 {
     line-height: 140%;
     padding: .5rem;
     background-image: url(utahtechlogo.svg);
@@ -36,14 +26,16 @@ h1 {
     background-repeat: no-repeat;
     padding-left: 1em ;
     background-origin: content-box  ;
-    margin-bottom:0;
+    margin:0;
 
 }
 nav {
     font-weight: bold;
-    background-color: #F3F3F3;
-    padding-left: 2rem;
-    padding:0.5rem;
+    background-color: #424242;
+    padding:0rem;
+    margin:0;
+    position:sticky;
+    top:0;
 
 }
 
@@ -97,6 +89,10 @@ h3{
 }
 nav a {
     text-decoration: none;
+    color:#FFFFFF;
+    padding:1rem 0rem;
+    display:block;
+    text-align: center;
 }
 
 dt{
@@ -107,4 +103,52 @@ dt{
 main{
     padding-left: 2rem;
     padding-right: 2rem; 
+}
+header {
+    grid-row:1 / 2;
+    grid-column: 2 / -2;
+    background-color: #003058;
+    color: #FFFFFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav {
+    grid-row:2 / 3;
+    grid-column: 2 / -2;}
+#homehero, #studenthero, #facultyhero{
+    grid-row:3/4;
+    grid-column: 2/-2;
+}
+main{
+    grid-row:4/5;
+    grid-column:2/-2 ;
+    background-color: #FFFFFF;
+}
+footer{
+    grid-row:5/6 ;
+    grid-column: 2/ -2;
+}
+header a{
+    color:#ffffff;
+    text-decoration:none ;
+}
+main img{
+    float:right;
+    padding-left: 2rem;
+
+}
+nav ul{
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+
+}
+nav ul li{
+    width:100%;
+
+}
+nav a:hover{
+    background-color: #BA1C21;
+
 }
