@@ -1,0 +1,102 @@
+img {
+    width:100%;
+}
+a {
+    color: black;
+
+}
+header {
+    color:white;
+    text-align: center;
+}
+header img {
+    width:50px;
+}
+h1 {font-size: 75px}
+p{
+    font-size: 1.5rem;
+}
+#bluetext { color:blue}
+
+.redtext {color:blue}
+body{
+    background-image: linear-gradient(#dddddd #FFFFFF);
+}
+
+p{
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 26;
+    line-height: 1;
+    text-transform: uppercase
+        }
+nav{
+    
+    text-align: center;
+    }
+nav ul li{
+    display:inline-block;
+
+    padding: 10px 20px;
+    margin:0px;
+    text-align: center;
+}
+    nav ul li:hover{color:aquamarine}
+    .myimage{
+    size: 300px;
+    float:left;
+    }
+    .backgroundimage{
+
+    }
+    .clear{
+        clear:both;
+    }
+    div{
+        overflow: auto;
+    }
+
+.collum{}
+.absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.gallery{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,minmax(200px,110));
+
+}
+#wrapper {
+    display:grid;
+    grid-auto-rows: minmax(0,auto);
+    grid-template-columns: minmax(0px,1fr) repeat(6,minmax(0,175px)) minmax(0px,1fr);
+}
+header {
+    grid-row:1 / 2;
+    grid-column: 2 / -2;
+
+
+}
+nav {
+    grid-row:2 / 3;
+    grid-column: 2 / -2;}
+
+main{
+    grid-row:3/4;
+    grid-column:2/-2 ;
+    background-color: #FFFFFF;
+}
+footer{
+    grid-row:4/5 ;
+    grid-column: 2/ -2;
+}
+
+
+
+    
