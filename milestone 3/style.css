@@ -93,13 +93,7 @@ footer{
     grid-row:4/5 ;
     grid-column: 2/ -2;
 }
-table {
-    width:100%;
-}
-table,tr,td,th {
-    border: #000000;
-    
-}
+
 
 
     
