@@ -234,12 +234,12 @@ table {
     margin:0 auto;
     border:1px solid #424242;
     width:100%;
-    border:collapse;
+    border-collapse: collapse;
 
 }
 td,th{
     padding:5px;
-    border:1px #424242;
+    border:1px solid #424242;
 }
 td{
     text-align: center;
