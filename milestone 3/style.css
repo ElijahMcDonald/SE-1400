@@ -115,12 +115,52 @@ footer{
     grid-row:3/4;
     grid-column:1/-1;
 }
+#phonehero{
+
+}
 .welcome{
     font-size:2rem;
     font-family: 'Times New Roman', Times, serif;
 
 }
+@media only screen and (max-width: 900px){
 
+    nav{
+        grid-row: 2/3;
+        grid-column: 1/5;
+        position: static;
+    }
+    nav ul {
+        flex-flow:column nowrap;
+    }
+    video{
+        float:none;
+        margin:0;
+        width:100%;
+        height:auto;
+    }
+    #logohero, #phonehero, #ushero, #truckhero, #garbagehero{
+        grid-row:2/3;
+        grid-column: 5/8;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 600px){
+
+
+    header h1{
+        background-image:none;
+        text-align: center;
+    }
+    nav{
+        grid-row: 2/3;
+        grid-column: 1/-1;
+    }
+    #logohero, #phonehero, #ushero, #truckhero, #garbagehero{
+        display:none;
+        
+    }
+}
 
 
 
