@@ -123,8 +123,6 @@ footer{
     background-position: center;
     grid-row:3/4;
     grid-column:1/-1;
-    grid minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr)
-}
 
 }
 .welcome{
