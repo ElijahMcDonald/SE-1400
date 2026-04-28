@@ -1,0 +1,174 @@
+img {
+    width:100%;
+}
+a {
+    color: black;
+
+}
+header {
+    color:white;
+    text-align: center;
+}
+header img {
+    width:50px;
+}
+h1 {font-size: 75px}
+
+p{
+    text-align: center;
+}
+#body{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: xx-small;
+}
+p{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 26;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase
+    }
+nav{
+    
+    text-align: center;
+    }
+nav ul li{
+    display:inline-block;
+
+    padding: 10px 20px;
+    margin:0px;
+    text-align: center;
+}
+    nav ul li:hover{color:aquamarine}
+    .myimage{
+    size: 300px;
+    float:left;
+    }
+    .clear{
+        clear:both;
+    }
+    div{
+        overflow: auto;
+    }
+
+
+.absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.gallery{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,minmax(200px,110));
+
+}
+#wrapper {
+    display:grid;
+    grid-auto-rows: minmax(0,auto);
+    grid-template-columns: minmax(0px,1fr) repeat(6,minmax(0,175px)) minmax(0px,1fr);
+}
+header {
+    grid-row:1 / 2;
+    grid-column: 2 / -2;
+
+
+}
+nav {
+    grid-row:2 / 3;
+    grid-column: 2 / -2;}
+
+main{
+    grid-row:3/4;
+    grid-column:2/-2 ;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+footer{
+    grid-row:4/5 ;
+    grid-column: 2/ -2;
+    text-align: center;
+    
+}
+#logohero{
+    height: 300px;
+    background-image: url(truck.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row:3/4;
+    grid-column:1/-1;
+}
+#ushero{
+    height: 300px;
+    background-image: url(us.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row:3/4;
+    grid-column:1/-1;
+}
+#phonehero{
+    height: 300px;
+    background-image: url(phone.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row:3/4;
+    grid-column:1/-1;
+
+}
+.welcome{
+    font-size:2rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+@media only screen and (max-width: 900px){
+
+    nav{
+        grid-row: 2/3;
+        grid-column: 1/5;
+        position: static;
+    }
+    nav ul {
+        flex-flow:column nowrap;
+    }
+    video{
+        float:none;
+        margin:0;
+        width:100%;
+        height:auto;
+    }
+    #logohero, #phonehero, #ushero, #truckhero, #garbagehero{
+        grid-row:2/3;
+        grid-column: 5/8;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 600px){
+
+
+    header h1{
+        background-image:none;
+        text-align: center;
+    }
+    nav{
+        grid-row: 2/3;
+        grid-column: 1/-1;
+    }
+    #logohero, #phonehero, #ushero, #truckhero, #garbagehero{
+        display:none;
+        
+    }
+}
+
+
+
+        
