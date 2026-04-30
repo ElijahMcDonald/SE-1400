@@ -98,7 +98,7 @@ footer{
     
 }
 #logohero{
-    height: 300px;
+    height: 200px;
     background-image: url(truck.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -107,16 +107,34 @@ footer{
     grid-column:1/-1;
 }
 #ushero{
+    height: 200px;
+    background-image: url(us.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row:3/4;
+    grid-column:1/-1;
 
 }
 #phonehero{
-    height: 300px;
+    height: 200px;
     background-image: url(phone.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     grid-row:3/4;
     grid-column:1/-1;
+
+}
+#bikehero{
+    height: 200px;
+    background-image: url(us.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row:3/4;
+    grid-column:1/-1;
+    
 
 }
 .welcome{
