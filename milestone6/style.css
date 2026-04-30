@@ -147,15 +147,7 @@ h4{
     font-family:'Times New Roman', Times, serif;
     font-size: larger; 
 }
-h5{
-    height: 300px;
-    background-image: url(us.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    grid-row:3/4;
-    grid-column:1/-1;
-}
+
 @media only screen and (max-width: 900px){
 
     nav{
@@ -172,7 +164,7 @@ h5{
         width:100%;
         height:auto;
     }
-    #logohero, #phonehero, #ushero, #truckhero, #garbagehero{
+    #logohero, #phonehero, #ushero, #truckhero, #garbagehero,#bikehero{
         grid-row:2/3;
         grid-column: 5/8;
         height: auto;
@@ -189,7 +181,7 @@ h5{
         grid-row: 2/3;
         grid-column: 1/-1;
     }
-    #logohero, #phonehero, #ushero, #truckhero, #garbagehero{
+    #logohero, #phonehero, #ushero, #truckhero, #garbagehero,#bikehero{
         display:none;
         
     }
